@@ -27,11 +27,11 @@ const headers = data.shift();
 const formattedData = data.map(row => {
   return {
     nome: row[headers.indexOf('Nome')],
-    durataMedia: row[headers.indexOf('Durata Media')],
-    difficolta: row[headers.indexOf('Difficoltà')],
+    durataMedia: row[headers.indexOf('DurataMedia')],
+    difficolta: row[headers.indexOf('Difficolta')],
     tipologia: row[headers.indexOf('Tipologia')],
-    giocatoriMin: row[headers.indexOf('Giocatori Min')],
-    giocatoriMax: row[headers.indexOf('Giocatori Max')],
+    giocatoriMin: row[headers.indexOf('GiocatoriMin')],
+    giocatoriMax: row[headers.indexOf('GiocatoriMax')],
     proprietario: row[headers.indexOf('Proprietario')],
     posizione: row[headers.indexOf('Posizione')],
   };
