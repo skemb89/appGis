@@ -2,7 +2,10 @@
 async function getGames() {
     try {
         const response = await fetch('https://appgis.onrender.com/api/giochi');  // Usa l'URL del tuo server live
-        const giochi = await response.json();
+        let giochi = await response.json();
+
+        // Ordina i giochi per nome in ordine alfabetico
+        giochi.sort((a, b) => a.nome.localeCompare(b.nome));
 
         const tableBody = document.getElementById('gamesTable').getElementsByTagName('tbody')[0];
 
