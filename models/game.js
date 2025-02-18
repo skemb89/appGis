@@ -12,27 +12,27 @@ const gameSchema = new mongoose.Schema({
     },
     durataMedia: {
         type: Number,  // Durata media in minuti
-        required: true, 
+        required: false, 
     },
     difficolta: {
         type: Number,  // Difficoltà BGG
-        required: true, 
+        required: false, 
     },
     giocatoriMin: {
         type: Number,  // Numero minimo di giocatori
-        required: true, 
+        required: false, 
     },
     giocatoriMax: {
         type: Number,  // Numero massimo di giocatori
-        required: true, 
+        required: false, 
     },
     proprietario: {
         type: String,  // Proprietario del gioco
-        required: true,
+        required: false,
     },
     posizione: {
         type: String,  // Posizione fisica del gioco
-        required: true,
+        required: false,
     }
 });
 

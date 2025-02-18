@@ -1,0 +1,13 @@
+POST https://appgis.onrender.com/api/giochi HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": "Mony",
+  "durataMedia": 60,
+  "difficolta": "5",
+  "tipologia": "Da Tavolo",
+  "giocatoriMin": 2,
+  "giocatoriMax": 10,
+  "proprietario": "Gio",
+  "posizione": "Soggiorno"
+}
